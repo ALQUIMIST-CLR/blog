@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+ /*header*/
+header .site{
+    padding-left: 20em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+
+}
+
+ /*navbar*/
+
+body .navbar{
+    font-weight: 700;
+    font-size: larger;
+    padding-left: 15em;
+}
+
+body .navbar-nav .nav-item1 a{
+    font-size: 1.2em; 
+    color: rgb(99, 93, 93);
+
+}
+
+body .navbar-nav .nav-item2 a{
+    font-size: 1.2em; 
+    color: rgb(99, 93, 93);
+}
+
+
+form{
+    padding-top: 2em;
+    padding-left: 20em;
+}
+
+form .title{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+form .form-group{
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 0.8em;
+}
+
+
+form .form-group input{
+    line-height: 2em;
+    width: 30em;
+    border-radius: 0.5em;
+    border-width: 0.1em;
+    border-color: rgb(151, 147, 147);
+    background-color: rgb(247, 240, 181);
+}
+form .form-group textarea{
+    line-height: 5em;
+    width: 30em;
+    border-radius: 0.8em;
+    border-width: 0.1em;
+    border-color: rgb(151, 147, 147);
+    background-color: rgb(247, 240, 181);
+}
+
+form .form-check .form-check-label{
+    text-transform: capitalize;
+    font-size: 0.8em;
+}
+
+form .boton input{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    line-height: 2em;
+    width: 8em;
+    border-radius: 0.5em;
+    background-color: #070707;
+    font-size: 0.8em;
+    color: white;
+    border-color: black;
+}
+
+form .title div .boton div h1{
+    text-transform: capitalize;
+}
+
+
+
+
+

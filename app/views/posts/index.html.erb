@@ -1,0 +1,60 @@
+
+<%= form_with(model: @post, local: true, html: {id: 'create_posts'}) do |form| %>
+
+  <form>
+   <div class="title">
+     <p> Inscribete</>
+   <div/>
+
+   <div class="form-group">
+     <%= form.label :title %><br/>
+     <%= form.text_field :title, required: true %>
+   </div>
+
+   <div class="form-group">
+     <%= form.label :image_url %><br/>
+     <%= form.text_field :image_url, required: true %>
+   </div>
+
+   <div class="form-group">
+     <%= form.label :content %><br/>
+     <%= form.text_area :content, required: true %>
+   </div>
+
+   <div class="form-check">
+     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+     <label class="form-check-label" for="exampleCheck1">Check me out</label>
+   </div>
+  
+   <div class="boton">
+     <%= form.submit "Guardar" %>
+   <div/>
+ </form>
+ 
+<% end %>
+
+<br/>
+
+<h1 class="pb-5"> listado de Posts</>
+
+
+<table class="h1 mt-3 table-striped"> 
+  <tr class= "table-active"> 
+    <th class="px-5 py-3 h4">Titulo</th> 
+    <th class="px-5 py-3 h4">Fecha de ingreso</th> 
+    <th class="px-5 py-3 h4">Imagen</th> 
+    <th class="px-5 py-3 h4">Contenido</th> 
+  </tr> 
+
+  <% @posts.each do |post| %> 
+    <tr class="h5 text-center"> 
+      <td><%= post.title %></td> 
+      <td><%= time_tag(post.created_at) %></td> 
+      <td class="py-4"><%= image_tag(post.image_url, style: 'width:200px') %></td> 
+      <td><%= post.content %></td> 
+    </tr> 
+
+  <% end %>
+</table> 
+
+
